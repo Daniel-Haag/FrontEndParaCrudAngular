@@ -24,10 +24,12 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 
 import { HttpClientModule } from '@angular/common/http';
 
-import {FormsModule} from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
+import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ProductReadComponent } from './components/product/product-read/product-
     RedDirective,
     ForDirective,
     ProductCreateComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    EmployeeCrudComponent,
+    EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,
