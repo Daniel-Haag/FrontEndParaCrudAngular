@@ -26,11 +26,15 @@ export class EmployeeCreateComponent implements OnInit {
   }
 
     createEmployee(){
-      console.log('chamou o método createEmployee')
+      console.log('chamou o método createEmployee');
       this.employeeService.create(this.employee).subscribe(() => {
         this.employeeService.showMessage('Novo funcionário cadastrado!');
         this.router.navigate(['employees']);
       });
+    }
+
+    cancel() {
+      this.router.navigate(['employees']);
     }
 
 }

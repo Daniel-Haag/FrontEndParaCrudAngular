@@ -6,7 +6,17 @@
         <mat-form-field>
             <input matInput placeholder="Nome" [(ngModel)]="employee.name" name="name" >
         </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade" [(ngModel)]="employee.age" name="age">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Salário" [(ngModel)]="employee.salary" name="salary">
+        </mat-form-field>
     </form>
+    <button mat-raised-button (click)="createEmployee()" style="background-color: cornflowerblue">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
 </mat-card>
-
-<button (click)="createEmployee()">Criar</button>

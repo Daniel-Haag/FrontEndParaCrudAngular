@@ -30,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
 import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
+import { EmployeeReadComponent } from './components/employee/employee-read/employee-read.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { EmployeeCreateComponent } from './components/employee/employee-create/e
     ProductCreateComponent,
     ProductReadComponent,
     EmployeeCrudComponent,
-    EmployeeCreateComponent
+    EmployeeCreateComponent,
+    EmployeeReadComponent
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,8 @@ export class EmployeeService {
     create(employee: Employee): Observable<Employee>{
       return this.http.post<Employee>(this.employeesUrl, employee);
     }
+
+    read(): Observable<Employee[]>{
+      return this.http.get<Employee[]>(this.employeesUrl);
+    }
 }
