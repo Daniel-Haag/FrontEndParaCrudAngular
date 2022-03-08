@@ -16,7 +16,6 @@ export class EmployeeCrudComponent implements OnInit {
   }
 
   navigateToEmployeeCreate(): void {
-    console.log("Navegando...");
     this.router.navigate(['/employees/create']);
   }
 
