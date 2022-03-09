@@ -31,6 +31,10 @@ import { ProductReadComponent } from './components/product/product-read/product-
 import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
 import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
 import { EmployeeReadComponent } from './components/employee/employee-read/employee-read.component';
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,8 @@ import { EmployeeReadComponent } from './components/employee/employee-read/emplo
     ProductReadComponent,
     EmployeeCrudComponent,
     EmployeeCreateComponent,
-    EmployeeReadComponent
+    EmployeeReadComponent,
+    ProductRead2Component
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,10 @@ import { EmployeeReadComponent } from './components/employee/employee-read/emplo
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
