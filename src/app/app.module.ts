@@ -35,6 +35,9 @@ import { ProductRead2Component } from './components/product/product-read2/produc
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ClientCrudComponent } from './views/client-crud/client-crud.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ClientReadComponent } from './components/client/client-read/client-read.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { MatSortModule } from '@angular/material/sort';
     EmployeeCrudComponent,
     EmployeeCreateComponent,
     EmployeeReadComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    ClientCrudComponent,
+    ClientCreateComponent,
+    ClientReadComponent
   ],
   imports: [
     BrowserModule,

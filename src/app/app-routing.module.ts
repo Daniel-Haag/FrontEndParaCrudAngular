@@ -7,6 +7,8 @@ import { ContatoComponent } from  "./views/contato/contato.component";
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
 import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
+import { ClientCrudComponent } from './views/client-crud/client-crud.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
 
 const routes: Routes = [
 {
@@ -33,6 +35,15 @@ const routes: Routes = [
 {
   path: "employees/create",
   component: EmployeeCreateComponent
+}
+,
+{
+  path: "clients",
+  component: ClientCrudComponent
+},
+{
+  path: "clients/create",
+  component: ClientCreateComponent
 }
 ];
 

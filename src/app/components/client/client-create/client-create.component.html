@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>
+        Cadastrar Cliente
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="client.name" name="name" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [(ngModel)]="client.address" name="adress">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Contato" [(ngModel)]="client.contact" name="contact">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button style="background-color: cornflowerblue" (click)="createClient()">
+        Salvar
+    </button>
+    <button mat-raised-button>
+        Cancelar
+    </button>
+</mat-card>
