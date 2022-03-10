@@ -38,6 +38,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { ClientCrudComponent } from './views/client-crud/client-crud.component';
 import { ClientCreateComponent } from './components/client/client-create/client-create.component';
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
+import { TableComponent } from './components/template/table/table.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ClientReadComponent } from './components/client/client-read/client-read
     ProductRead2Component,
     ClientCrudComponent,
     ClientCreateComponent,
-    ClientReadComponent
+    ClientReadComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
