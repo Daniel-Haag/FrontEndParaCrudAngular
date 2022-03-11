@@ -9,6 +9,7 @@ import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.compo
 import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
 import { ClientCrudComponent } from './views/client-crud/client-crud.component';
 import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 const routes: Routes = [
 {
@@ -16,17 +17,21 @@ const routes: Routes = [
   component: HomeComponent
 },
 {
-  path: "products",
-  component: ProductCrudComponent
-},
-{
   path: "contato",
   component: ContatoComponent
+},
+{
+  path: "products",
+  component: ProductCrudComponent
 }
 ,
 {
   path: "products/create",
   component: ProductCreateComponent
+},
+{
+  path: "products/update",
+  component: ProductUpdateComponent
 },
 {
   path: "employees",

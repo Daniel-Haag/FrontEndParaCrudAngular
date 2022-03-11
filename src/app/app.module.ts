@@ -39,6 +39,7 @@ import { ClientCrudComponent } from './views/client-crud/client-crud.component';
 import { ClientCreateComponent } from './components/client/client-create/client-create.component';
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
 import { TableComponent } from './components/template/table/table.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { TableComponent } from './components/template/table/table.component';
     ClientCrudComponent,
     ClientCreateComponent,
     ClientReadComponent,
-    TableComponent
+    TableComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
