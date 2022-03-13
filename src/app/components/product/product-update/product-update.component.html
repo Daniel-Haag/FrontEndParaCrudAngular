@@ -10,7 +10,7 @@
     <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
 </mat-form-field>
     </form>
-    <button mat-raised-button style="background-color: cornflowerblue">
+    <button mat-raised-button (click)="update()" style="background-color: cornflowerblue">
         Salvar
     </button>
     <button mat-raised-button (click)="cancel()">

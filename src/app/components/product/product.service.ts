@@ -40,4 +40,9 @@ export class ProductService {
     return this.http.put<Product>(url, product)
   }
 
+  getProductByID(id: string): Observable<Product>{
+    const url = `${this.productsUrl}/${id}`
+    return this.http.get<Product>(url);
+  }
+
 }

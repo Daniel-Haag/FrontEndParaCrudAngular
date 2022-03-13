@@ -24,5 +24,4 @@ export class ProductReadComponent implements OnInit {
       this.dataSource = products;
     });
   }
-
 }
