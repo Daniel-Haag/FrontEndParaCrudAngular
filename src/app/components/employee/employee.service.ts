@@ -30,4 +30,14 @@ export class EmployeeService {
     read(): Observable<Employee[]>{
       return this.http.get<Employee[]>(this.employeesUrl);
     }
+
+    readByID(id: string): Observable<Employee>{
+      var url = `${this.employeesUrl}/${id}`;
+      return this.http.get<Employee>(url);
+    }
+
+    update(employee: Employee): Observable<Employee>{
+      var url = `${this.employeesUrl}/${employee.id}`;
+      return this.http.put<Employee>(url, employee)
+    }
 }
