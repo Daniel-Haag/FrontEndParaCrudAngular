@@ -11,7 +11,7 @@ import { EmployeeService } from '../employee.service';
 export class EmployeeUpdateComponent implements OnInit {
 
   employee: Employee = {
-    name: 'teste',
+    name: '',
     age: 0,
     salary: 0
   }

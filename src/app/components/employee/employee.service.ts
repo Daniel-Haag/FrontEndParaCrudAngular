@@ -40,4 +40,9 @@ export class EmployeeService {
       var url = `${this.employeesUrl}/${employee.id}`;
       return this.http.put<Employee>(url, employee)
     }
+
+    delete(id: string): Observable<Employee>{
+      var url = `${this.employeesUrl}/${id}`;
+      return this.http.delete<Employee>(url);
+    }
 }

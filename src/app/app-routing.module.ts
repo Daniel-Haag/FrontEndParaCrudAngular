@@ -12,6 +12,7 @@ import { ClientCreateComponent } from './components/client/client-create/client-
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { EmployeeUpdateComponent } from './components/employee/employee-update/employee-update.component';
+import { EmployeeDeleteComponent } from './components/employee/employee-delete/employee-delete.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'employees/update/:id',
     component: EmployeeUpdateComponent,
+  },
+  {
+    path: 'employees/delete/:id',
+    component: EmployeeDeleteComponent,
   },
   {
     path: 'clients',

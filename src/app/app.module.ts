@@ -36,6 +36,7 @@ import { TableComponent } from './components/template/table/table.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { EmployeeUpdateComponent } from './components/employee/employee-update/employee-update.component';
+import { EmployeeDeleteComponent } from './components/employee/employee-delete/employee-delete.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { EmployeeUpdateComponent } from './components/employee/employee-update/e
     TableComponent,
     ProductUpdateComponent,
     ProductDeleteComponent,
-    EmployeeUpdateComponent
+    EmployeeUpdateComponent,
+    EmployeeDeleteComponent
   ],
   imports: [
     BrowserModule,
