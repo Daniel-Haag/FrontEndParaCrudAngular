@@ -40,6 +40,7 @@ import { ClientCreateComponent } from './components/client/client-create/client-
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
 import { TableComponent } from './components/template/table/table.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
     ClientCreateComponent,
     ClientReadComponent,
     TableComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,
