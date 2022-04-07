@@ -12,7 +12,7 @@ export class ClientService {
   clientsUrl = "http://localhost:3001/clients";
 
   constructor(private snackBar: MatSnackBar,
-    private http: HttpClient) {
+              private http: HttpClient) {
 
      }
 
@@ -26,5 +26,9 @@ export class ClientService {
 
      create(client: Client): Observable<Client>{
         return this.http.post<Client>(this.clientsUrl, client);
+     }
+
+     read(): Observable<Client[]>{
+       return this.http.get<Client[]>(this.clientsUrl);
      }
 }

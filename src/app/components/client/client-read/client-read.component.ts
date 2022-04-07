@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Client } from '../client.model';
+import { ClientService } from '../client.service';
 
 @Component({
   selector: 'app-client-read',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientReadComponent implements OnInit {
 
-  constructor() { }
+  clients: Client[] = [];
+  displayedColumns: string[] = ['id', 'name', 'email', 'address', 'contact', 'action'];
+  dataSource: Client[] = [];
+
+  constructor(private clientService: ClientService) { }
 
   ngOnInit(): void {
+    this.clientService.read().subscribe(clients => {
+      this.clients = clients;
+      this.dataSource = clients;
+    })
   }
 
 }
